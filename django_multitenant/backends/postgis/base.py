@@ -6,6 +6,10 @@ from django.contrib.gis.db.backends.postgis.schema import (
 from django.contrib.gis.db.backends.postgis.base import (
     DatabaseWrapper as PostGISDatabaseWrapper,
 )
+from django.contrib.gis.db.backends.postgis.features import DatabaseFeatures
+from django.contrib.gis.db.backends.postgis.introspection import PostGISIntrospection
+from django.contrib.gis.db.backends.postgis.operations import PostGISOperations
+from django.contrib.gis.db.backends.base.models import SpatialRefSysMixin
 from django_multitenant.fields import TenantForeignKey
 from django_multitenant.utils import get_model_by_db_table, get_tenant_column
 
